@@ -157,6 +157,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/Http/Validators" />
     </key>
   </component>
@@ -178,7 +179,7 @@
       <workItem from="1609381088315" duration="15736000" />
       <workItem from="1609404502361" duration="24289000" />
       <workItem from="1609504072415" duration="4944000" />
-      <workItem from="1609547824924" duration="5366000" />
+      <workItem from="1609547824924" duration="7279000" />
     </task>
     <servers />
   </component>
