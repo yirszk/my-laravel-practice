@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//hello
 Route::get('hello','App\Http\Controllers\HelloController@index')
     ->middleware('helo');
 Route::post('hello','App\Http\Controllers\HelloController@post');
@@ -17,6 +18,7 @@ Route::get('hello/del','App\Http\Controllers\HelloController@del');
 Route::post('hello/del','App\Http\Controllers\HelloController@remove');
 Route::get('hello/show','App\Http\Controllers\HelloController@show');
 
+//person
 Route::get('person','\App\Http\Controllers\PersonController@index');
 Route::get('person/find','\App\Http\Controllers\PersonController@find');
 Route::post('person/find','\App\Http\Controllers\PersonController@search');
@@ -26,3 +28,8 @@ Route::get('person/edit','\App\Http\Controllers\PersonController@edit');
 Route::post('person/edit','\App\Http\Controllers\PersonController@update');
 Route::get('person/del','App\Http\Controllers\PersonController@del');
 Route::post('person/del','App\Http\Controllers\PersonController@remove');
+
+//board
+Route::get('board','\App\Http\Controllers\BoardController@index');
+Route::get('board/add','\App\Http\Controllers\BoardController@add');
+Route::post('board/add','\App\Http\Controllers\BoardController@create');
