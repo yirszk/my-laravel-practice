@@ -16,3 +16,6 @@ In advance, I learned PHP with this:
 And I use this:
 - Build environment: [【Mac】Laravel導入（インストール）](https://qiita.com/1992_momotaro/items/c84ad1701c4623c04f27)
 - Textbook: [PHPフレームワークLaravel入門 第2版](https://amzn.to/3hup9QY)
+  
+Next, I am planning to do this:
+- [Laravel6とAWSで作るブックレビューサイト](https://www.techpit.jp/courses/9)
