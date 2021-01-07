@@ -8,7 +8,7 @@ Route::get('/', function () {
 
 // hello
 Route::get('hello','App\Http\Controllers\HelloController@index')
-    ->middleware('helo');
+    ->middleware('helo')->middleware('auth');
 Route::post('hello','App\Http\Controllers\HelloController@post');
 Route::get('hello/add','App\Http\Controllers\HelloController@add');
 Route::post('hello/add','App\Http\Controllers\HelloController@create');
@@ -20,6 +20,8 @@ Route::get('hello/show','App\Http\Controllers\HelloController@show');
 Route::get('hello/rest','App\Http\Controllers\HelloController@rest');
 Route::get('hello/session','App\Http\Controllers\HelloController@ses_get');
 Route::post('hello/session','App\Http\Controllers\HelloController@ses_put');
+Route::get('hello/auth','App\Http\Controllers\HelloController@getAuth');
+Route::post('hello/auth','App\Http\Controllers\HelloController@postAuth');
 
 // person
 Route::get('person','\App\Http\Controllers\PersonController@index');
@@ -39,3 +41,7 @@ Route::post('board/add','\App\Http\Controllers\BoardController@create');
 
 // restdata
 Route::resource('rest','\App\Http\Controllers\RestappController');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
